@@ -4,7 +4,7 @@ class Sourcehawk < Formula
   homepage "https://optum.github.io/sourcehawk"
   url "https://github.com/Optum/sourcehawk/releases/download/v0.5.1/sourcehawk-0.5.1-darwin-x86_64.tar.gz"
   sha256 "f37bea28df3b110f4437d50d8bbf2380b483661f65b9008d7734a7c731d30471"
-  license "GPL-3.0-or-later"
+  license "GPL-3.0"
 
   def install
     system "./configure", "--disable-debug",
