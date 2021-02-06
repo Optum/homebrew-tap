@@ -5,10 +5,10 @@ class Sourcehawk < Formula
   license "GPL-3.0"
 
   url "https://github.com/Optum/sourcehawk/releases/download/v0.5.1/sourcehawk-0.5.1-darwin-x86_64.tar.gz"
-  sha256 "f37bea28df3b110f4437d50d8bbf2380b483661f65b9008d7734a7c731d30471"
+  sha256 "c33af29f26f4f45e552379a07310b1fd068d1870a5f7b06a31155f9971948472"
 
   version "0.5.1"
-  revision 2
+  revision 0
 
   def install
 
