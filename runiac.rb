@@ -11,15 +11,15 @@ class Runiac < Formula
 
   if OS.mac?
     url "https://github.com/Optum/runiac/releases/download/v0.0.1-beta4/runiac_0.0.1-beta4_Darwin_x86_64.tar.gz"
-    sha256 "4d049069dad8ca94d47185ee01a3d01aa873c04076ca3da33b8f1ba7566e3632"
+    sha256 "a469fcce1841d70ba9029f1b46dcdc53ba2f406fdbb1069dcdf6a0f001ee337b"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/Optum/runiac/releases/download/v0.0.1-beta4/runiac_0.0.1-beta4_Linux_x86_64.tar.gz"
-    sha256 "88ba2240752c2d2cd0af925a4dcb13b953824935dd2c3bfa4ed6194116e1b034"
+    sha256 "bc92dca806cb00358cdd0a40d7121091b63c167dd8cc9970f8746a31145ebdc0"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/Optum/runiac/releases/download/v0.0.1-beta4/runiac_0.0.1-beta4_Linux_arm64.tar.gz"
-    sha256 "e8d6543c80431b2ce9a51fe6398511c5203d073832230c10da933c435e616cf9"
+    sha256 "817d579503d1a89d74e16fc89aac81989cf3e371ed197d873f5a782bfcde917a"
   end
 
   def install
