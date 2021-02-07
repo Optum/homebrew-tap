@@ -30,7 +30,7 @@ class Sourcehawk < Formula
   end
 
   test do
-    assert_equal "Sourcehawk v0.5.1", shell_output("#{share}/sourcehawk -V").chomp
+    assert_equal "Sourcehawk v0.5.1", shell_output("#{bin}/sourcehawk -V").chomp
   end
 
 end
