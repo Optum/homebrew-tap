@@ -2,7 +2,7 @@
 
 [![Sourcehawk Scan](https://github.com/optum/sourcehawk/workflows/Sourcehawk%20Scan/badge.svg)](https://github.com/optum/sourcehawk/actions) 
 
-Welcome to the Homebrew tap for Optum Open source projects.  This tap is intended to be used by Mac users.
+Welcome to the Homebrew tap for Optum Open source projects.
 
 
 ## Installing a Formula
