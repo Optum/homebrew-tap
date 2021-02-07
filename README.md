@@ -1,31 +1,25 @@
-# Welcome to your new OSS project
+# Optum Homebrew Tap
 
-This project currently has the base documentation files required.  Replace this
-file with your own README.md.
+[![Sourcehawk Scan](https://github.com/optum/sourcehawk/workflows/Sourcehawk%20Scan/badge.svg)](https://github.com/optum/sourcehawk/actions) 
 
-## Files included
+Welcome to the Homebrew tap for Optum Open source projects.  This tap is intended to be used by Mac users.
 
-**CODE_OF_CONDUCT.md**
 
-Use without changes
+## Installing a Formula
 
-**INDIVIDUAL_CONTRIBUTOR_LICENSE.md**
+Replace `<formula>` with the name of the package you would like to install.
 
-Use without changes
+```sh
+brew install optum/tap/<formula>
+```
 
-**CONTRIBUTING.md**
 
-This file has some portions that are required and others that can be customized.
-Customize the Coding Standards section to mention the languages used by your project.
-Feel free to add any rules and requirements that you would like people to follow
-when contributing to your project.
+## Formulae
 
-**NOTICE.txt**
+| Formula Name | Version | Github Repository |
+| ------------ | ------- | ----------------- |
+| `sourcehawk` | ![Homebrew Version](https://img.shields.io/badge/homebrew-0.5.1-orange) | [optum/sourcehawk](https://github.com/optum/sourcehawk) |
 
-This file is needed if your project is licensed under the Apache 2.0 license.  
-If you are using this license, fill it out according to the prompts.  Otherwise,
-delete this file.
 
-## Additional Repo Updates
-
-Make sure that you have a project description and appropriate repository topics.
+## Contributing
+If you wish to contribute, please read [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
