@@ -8,12 +8,12 @@ class Sourcehawk < Formula
   sha256 "65c2ee80c1593adea9f48a35053071f7917707444b04299c7ffdf84e0953722e"
 
   version "0.5.1"
-  revision 1
+  revision 0
 
   def install
 
-    share.mkpath
-    share.install "sourcehawk"
+    bin.mkpath
+    bin.install "sourcehawk"
 
     bash_completion.mkpath
     bash_completion.install "sourcehawk-bash-completion.sh"
