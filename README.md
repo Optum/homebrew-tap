@@ -16,9 +16,10 @@ brew install optum/tap/<formula>
 
 ## Formulae
 
-| Formula Name | Version | Github Repository |
-| ------------ | ------- | ----------------- |
-| `sourcehawk` | ![Homebrew Version](https://img.shields.io/badge/homebrew-0.5.1-orange) | [optum/sourcehawk](https://github.com/optum/sourcehawk) |
+| Formula Name | Github Repository |
+| ------------ | ----------------- |
+| `runiac`     | [optum/runiac](https://github.com/optum/runiac) |
+| `sourcehawk` | [optum/sourcehawk](https://github.com/optum/sourcehawk) |
 
 
 ## Contributing
