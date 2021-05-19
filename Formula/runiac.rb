@@ -5,25 +5,25 @@
 class Runiac < Formula
   desc "Run IaC Anywhere with Ease"
   homepage "https://runiac.io"
-  version "0.0.6"
+  version "0.0.7"
   license "Apache2"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Optum/runiac/releases/download/v0.0.6/runiac_0.0.6_darwin_x86_64.tar.gz"
-    sha256 "1df3bbb6ba2e8d6e9a4dfa30855e4fb5ca6778899af560081b233caefba2258f"
+    url "https://github.com/Optum/runiac/releases/download/v0.0.7/runiac_0.0.7_darwin_x86_64.tar.gz"
+    sha256 "b405c02c68a4ec0879ad968565c88306df2df980fb8fa1168cded20829380b61"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Optum/runiac/releases/download/v0.0.6/runiac_0.0.6_darwin_arm64.tar.gz"
-    sha256 "df18625f655fc9f7a04fdeff1f2aa62d4284b3c74c78d1b92016e740d7d56d08"
+    url "https://github.com/Optum/runiac/releases/download/v0.0.7/runiac_0.0.7_darwin_arm64.tar.gz"
+    sha256 "7cc86d169c7359f8cbcd2c0199261ee76538ac4513cfd0fa70c840acee1b0137"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Optum/runiac/releases/download/v0.0.6/runiac_0.0.6_linux_x86_64.tar.gz"
-    sha256 "0398c4909eb8eb3b393412e61f292eb7eb8516894bb1f5cfdfbcd8dc70010a06"
+    url "https://github.com/Optum/runiac/releases/download/v0.0.7/runiac_0.0.7_linux_x86_64.tar.gz"
+    sha256 "a93255c6f93389a0328e50ebd27018b065fd232e61e51448cc457f5543831fec"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/Optum/runiac/releases/download/v0.0.6/runiac_0.0.6_linux_arm64.tar.gz"
-    sha256 "3dd21e70cd696d699b7772dceb0ccfbfdf29aa1b113a8d5aa858eb64dc49aa7e"
+    url "https://github.com/Optum/runiac/releases/download/v0.0.7/runiac_0.0.7_linux_arm64.tar.gz"
+    sha256 "b0331795266d951caf1645b768a9ca548fd5b1f7d8eaae268a0a4acdf1943fef"
   end
 
   def install
