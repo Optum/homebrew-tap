@@ -1,6 +1,6 @@
 # Optum Homebrew Tap
 
-[![Sourcehawk Scan](https://github.com/optum/sourcehawk/workflows/Sourcehawk%20Scan/badge.svg)](https://github.com/optum/sourcehawk/actions) 
+[![Sourcehawk Scan](https://github.com/optum/homebrew-tap/workflows/Sourcehawk%20Scan/badge.svg)](https://github.com/optum/homebrew-tap/actions) 
 
 Welcome to the Homebrew tap for Optum Open source projects.
 
