@@ -4,10 +4,10 @@ class Sourcehawk < Formula
   homepage "https://optum.github.io/sourcehawk"
   license "GPL-3.0"
 
-  url "https://github.com/Optum/sourcehawk/releases/download/v0.5.1/sourcehawk-0.5.1-darwin-x86_64.tar.gz"
-  sha256 "65c2ee80c1593adea9f48a35053071f7917707444b04299c7ffdf84e0953722e"
+  url "https://github.com/Optum/sourcehawk/releases/download/v0.6.0/sourcehawk-0.6.0-darwin-x86_64.tar.gz"
+  sha256 "2b2b63137a1d916126d73baf2c9c335a925b2941bab27b901b2d7fafbd899736"
 
-  version "0.5.1"
+  version "0.6.0"
   revision 0
 
   livecheck do
@@ -24,8 +24,8 @@ class Sourcehawk < Formula
     bash_completion.mkpath
     bash_completion.install "sourcehawk-bash-completion.sh"
 
-    zsh_completion.mkpath
-    zsh_completion.install "sourcehawk-bash-completion.sh"
+#     zsh_completion.mkpath
+#     zsh_completion.install "sourcehawk-bash-completion.sh"
 
     man1.mkpath
     man1.install "sourcehawk.1.gz"
