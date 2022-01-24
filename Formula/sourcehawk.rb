@@ -8,7 +8,7 @@ class Sourcehawk < Formula
   sha256 "65c2ee80c1593adea9f48a35053071f7917707444b04299c7ffdf84e0953722e"
 
   version "0.5.1"
-  revision 0
+  revision 1
 
   livecheck do
     url :url
@@ -24,8 +24,8 @@ class Sourcehawk < Formula
     bash_completion.mkpath
     bash_completion.install "sourcehawk-bash-completion.sh"
 
-#     zsh_completion.mkpath
-#     zsh_completion.install "sourcehawk-bash-completion.sh"
+    zsh_completion.mkpath
+    zsh_completion.install "sourcehawk-bash-completion.sh"
 
     man1.mkpath
     man1.install "sourcehawk.1.gz"
