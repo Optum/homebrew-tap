@@ -42,6 +42,6 @@ class Semver < Formula
   end
 
   test do
-    system "#{bin}/runiac version"
+    system "#{bin}/semver --version"
   end
 end
