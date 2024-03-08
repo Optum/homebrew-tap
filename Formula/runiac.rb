@@ -5,21 +5,21 @@
 class Runiac < Formula
   desc "Run IaC Anywhere with Ease"
   homepage "https://runiac.io"
-  version "0.0.13"
+  version "0.0.14"
   license "Apache2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Optum/runiac/releases/download/v0.0.13/runiac_0.0.13_darwin_arm64.tar.gz"
-      sha256 "47c1000020a3fe9d3f48d16214c4fb5ee10d4a6dff496c496faf265fc0ea8870"
+      url "https://github.com/Optum/runiac/releases/download/v0.0.14/runiac_0.0.14_darwin_arm64.tar.gz"
+      sha256 "f0a56593e8f8759ea003af17177b18c00a0bc7fec1244d8a2111a27e18bfe4b0"
 
       def install
         bin.install "runiac"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Optum/runiac/releases/download/v0.0.13/runiac_0.0.13_darwin_x86_64.tar.gz"
-      sha256 "451c27654c7e603767a70d766783db401c14e89f171dd5c412395194fe0fd1cc"
+      url "https://github.com/Optum/runiac/releases/download/v0.0.14/runiac_0.0.14_darwin_x86_64.tar.gz"
+      sha256 "24620030a0acd8acf5c58cc84aa00f65a438ea714e1858dbe5bbdc1fb642b734"
 
       def install
         bin.install "runiac"
@@ -29,16 +29,16 @@ class Runiac < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Optum/runiac/releases/download/v0.0.13/runiac_0.0.13_linux_arm64.tar.gz"
-      sha256 "04065566dbaafe54dbe452252cc203e92596972c496d4c62685f40dfbe90c3f2"
+      url "https://github.com/Optum/runiac/releases/download/v0.0.14/runiac_0.0.14_linux_arm64.tar.gz"
+      sha256 "5c8bacc3f49a7e2774b38c21cd1d4a47d7cfd3046d72aac2ae51a7c4f8762877"
 
       def install
         bin.install "runiac"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Optum/runiac/releases/download/v0.0.13/runiac_0.0.13_linux_x86_64.tar.gz"
-      sha256 "54aa92868c107cfb481c153094ffb3a2d0c88a53eaf03166136f940b3cd07beb"
+      url "https://github.com/Optum/runiac/releases/download/v0.0.14/runiac_0.0.14_linux_x86_64.tar.gz"
+      sha256 "233d620e004643a24d660e3b59a74f5ad1ef5ff4fb5351a98ffc3578ae2b70bc"
 
       def install
         bin.install "runiac"
