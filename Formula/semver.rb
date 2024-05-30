@@ -5,7 +5,7 @@
 class Semver < Formula
   desc "A cli for common semantic versioning operations"
   homepage "https://github.com/Optum/semver-cli"
-  version "0.8.0"
+  version "0.8.4"
   license "Apache2"
 
   on_macos do
