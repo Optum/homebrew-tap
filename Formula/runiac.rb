@@ -5,42 +5,40 @@
 class Runiac < Formula
   desc "Run IaC Anywhere with Ease"
   homepage "https://runiac.io"
-  version "0.0.15"
+  version "0.0.16"
   license "Apache2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Optum/runiac/releases/download/v0.0.15/runiac_0.0.15_darwin_x86_64.tar.gz"
-      sha256 "907b9b59957d4bebeb75f60da70fcb699c1fddd726f5e4dfb35eb6c009f5ce25"
+      url "https://github.com/Optum/runiac/releases/download/v0.0.16/runiac_0.0.16_darwin_x86_64.tar.gz"
+      sha256 "919f5fd3760fba78a20b3fcda347b98d7c8518ad7a90ca2c3bbcd471d2407d8e"
 
-      def install
+      define_method(:install) do
         bin.install "runiac"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Optum/runiac/releases/download/v0.0.15/runiac_0.0.15_darwin_arm64.tar.gz"
-      sha256 "45c2b99d97e45ec2cbcf3786fbb7f66d6c2d9a7fe6d1dca9b5f9a15454cd7f3e"
+      url "https://github.com/Optum/runiac/releases/download/v0.0.16/runiac_0.0.16_darwin_arm64.tar.gz"
+      sha256 "32f6e3aa8f60e778b42052aed19166a45fff2e546005da8b4fcabde0f9814548"
 
-      def install
+      define_method(:install) do
         bin.install "runiac"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/Optum/runiac/releases/download/v0.0.15/runiac_0.0.15_linux_x86_64.tar.gz"
-      sha256 "6ef7ce9996a8b646fde765b8f31eaebecb79ce5a0b12beeaa919182e64fe9c65"
-
-      def install
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/Optum/runiac/releases/download/v0.0.16/runiac_0.0.16_linux_x86_64.tar.gz"
+      sha256 "b48b51c0742fe30bbd24050cdf38252912dcffdf73ed576eeb38db3d53c7e800"
+      define_method(:install) do
         bin.install "runiac"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Optum/runiac/releases/download/v0.0.15/runiac_0.0.15_linux_arm64.tar.gz"
-      sha256 "d34bb23df571a14fac29ad3c57005b1c7fb3757994a2e1e2a74df82772ae6a53"
-
-      def install
+      url "https://github.com/Optum/runiac/releases/download/v0.0.16/runiac_0.0.16_linux_arm64.tar.gz"
+      sha256 "db6a608d7b8a99be401d2cf468ed2cbfbb697f0d19515dd8f2b723f047fbb2a5"
+      define_method(:install) do
         bin.install "runiac"
       end
     end
