@@ -5,21 +5,21 @@
 class Semver < Formula
   desc "A cli for common semantic versioning operations"
   homepage "https://github.com/Optum/semver-cli"
-  version "2.0.4"
+  version "2.0.8"
   license "Apache2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Optum/semver-cli/releases/download/2.0.4/semver.x86_64-apple-darwin.tar.gz"
-      sha256 "68f22af2c84639eb16d89d5b78580ec49a0e8aebf50565f7c13d31fb98c98842"
+      url "https://github.com/Optum/semver-cli/releases/download/2.0.8/semver.x86_64-apple-darwin.tar.gz"
+      sha256 "2238924ac2c58715bf3f65767c52476602c79e5619389b3670d04c03572cd93b"
 
       def install
         bin.install "semver"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Optum/semver-cli/releases/download/2.0.4/semver.aarch64-apple-darwin.tar.gz"
-      sha256 "60ac657893eddd854b2cacb6e4bd20787a153e9af4d5ab521d4d269eed760667"
+      url "https://github.com/Optum/semver-cli/releases/download/2.0.8/semver.aarch64-apple-darwin.tar.gz"
+      sha256 "f897ff0447befa6a0cb022dd408150066b39e564bd9a2c210e80472f76bb7896"
 
       def install
         bin.install "semver"
@@ -29,8 +29,8 @@ class Semver < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Optum/semver-cli/releases/download/2.0.4/semver.x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3f279134891782cde0bce3a442aa816de00dc79dcf7c8fca638dd76d9be7285f"
+      url "https://github.com/Optum/semver-cli/releases/download/2.0.8/semver.x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5e22fd9ec5eb33d62c8f64c6556ceb062dd855e2ea19f1c498eb82dd8de93436"
 
       def install
         bin.install "semver"
